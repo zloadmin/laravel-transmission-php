@@ -8,12 +8,15 @@ Publish config file
 In your .env file add your parameters 
 
 `TRANSMISSION_HOST=localhost`
+
 `TRANSMISSION_PORT=9091`
+
 `TRANSMISSION_PATH=/transmission/rpc`
 
 If you use auth add username and password
 
 `TRANSMISSION_USERNAME=username`
+
 `TRANSMISSION_PASSWORD=password`
 
 ## Using 
