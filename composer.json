@@ -3,7 +3,7 @@
     "description": "Laravel facade of PHP Transmission client",
     "autoload": {
         "psr-4": {
-            "LaravelTransmissionPHP\\": "src/"
+            "TransmissionPHP\\": "src/"
         }
     },
     "extra": {
