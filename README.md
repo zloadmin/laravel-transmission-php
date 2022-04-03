@@ -3,7 +3,7 @@
 ## Set configuration
 Publish config file
 
-` php artisan vendor:publish --provider="TransmissionPHP\Providers\TransmissionProvider"`
+`php artisan vendor:publish --provider="TransmissionPHP\Providers\TransmissionProvider"`
 
 In your .env file add your parameters 
 
