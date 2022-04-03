@@ -5,6 +5,8 @@ namespace TransmissionPHP\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Transmission\Transmission;
+use Transmission\Client;
+
 
 /**
  * Class TransmissionProvider
@@ -31,6 +33,7 @@ class TransmissionProvider extends ServiceProvider
      */
     public function register()
     {
+
         $this->app->bind('transmission', function () {
             return new Transmission();
         });
