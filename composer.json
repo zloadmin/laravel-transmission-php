@@ -1,0 +1,31 @@
+{
+    "name": "zloadmin/laravel-transmission-php",
+    "description": "Laravel facade of PHP Transmission client",
+    "autoload": {
+        "psr-4": {
+            "LaravelTransmissionPHP\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "TransmissionPHP\\Providers\\TransmissionProvider"
+            ],
+            "aliases": {
+                "Transmission": "TransmissionPHP\\Facades\\Transmission"
+            }
+        }
+    },
+    "authors": [
+        {
+            "name": "Vladimir Karpovich",
+            "email": "dev.karpovich@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "kleiram/transmission-php": "dev-master",
+        "php": ">=7.0.0",
+        "ext-curl": "*"
+    }
+}
