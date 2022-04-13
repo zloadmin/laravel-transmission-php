@@ -24,8 +24,7 @@
     ],
     "minimum-stability": "dev",
     "require": {
-        "kleiram/transmission-php": "*",
-        "kriswallsmith/buzz": "^0.9.0",
+        "transmission-php/transmission-php": "*",
         "php": ">=7.0.0",
         "ext-curl": "*"
     }
