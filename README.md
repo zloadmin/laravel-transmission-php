@@ -27,7 +27,7 @@ $all_torrents = Transmission::all();
 ```
 
 ## Using other methods
-This package only laravel facade for original API client (https://github.com/kleiram/transmission-php), you can use any public method as static method
+This package only laravel facade for original API client (https://github.com/transmission-php/transmission-php), you can use any public method as static method
 
 ```php
 <?php
