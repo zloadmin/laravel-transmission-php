@@ -35,9 +35,9 @@ class TransmissionProvider extends ServiceProvider
     public function register()
     {
         $client = new Client((string)config('transmission.host'), (int)config('transmission.port'), (string)config('transmission.path'));
-        $username = config('transmission.username');
-        $password = config('transmission.password');
-        if ($username && $password) {
+        $username = (string)config('transmission.username');
+        $password = (string)config('transmission.password');
+        if ($username) {
             $client->authenticate($username, $password);
         }
         $this->app->bind('transmission', function () use ($client) {
