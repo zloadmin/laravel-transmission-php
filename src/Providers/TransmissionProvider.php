@@ -41,7 +41,9 @@ class TransmissionProvider extends ServiceProvider
             $client->authenticate($username, $password);
         }
         $this->app->bind('transmission', function () use ($client) {
-            return new Transmission($client);
+            $transmission = new Transmission();
+            $transmission->setClient($client);
+            return $transmission;
         });
     }
 }
