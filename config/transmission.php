@@ -6,5 +6,4 @@ return [
     'path' => env('TRANSMISSION_PATH', '/transmission/rpc'),
     'username' => env('TRANSMISSION_USERNAME', ''),
     'password' => env('TRANSMISSION_PASSWORD', ''),
-
 ];
