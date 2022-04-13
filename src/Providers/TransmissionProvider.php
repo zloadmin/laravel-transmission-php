@@ -34,7 +34,7 @@ class TransmissionProvider extends ServiceProvider
      */
     public function register()
     {
-        $client = new Client(config('transmission.host'), config('transmission.port'), config('transmission.path'));
+        $client = new Client((string)config('transmission.host'), (int)config('transmission.port'), (string)config('transmission.path'));
         $username = config('transmission.username');
         $password = config('transmission.password');
         if ($username && $password) {
